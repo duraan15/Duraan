@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <title>Shirkadda Gawaarida SMIRKED</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    label, input, select, textarea {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 8px;
+    }
+    input[type="submit"] {
+      background-color: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SMIRKED Gawaarida Casriga ah</h1>
+    <p>Shirkad Soomaaliyeed oo ku takhasustay samaynta iyo iibinta baabuurta tayada sare leh.</p>
+  </header>
+
+  <section>
+    <h2>Dalbo Gaari Cusub</h2>
+    <form action="submit-order.php" method="post">
+      <label for="fullname">Magacaaga:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="phone">Telefoonka:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="car_model">Nooca Gaariga:</label>
+      <select id="car_model" name="car_model">
+        <option value="smirked-x1">SMIRKED X1 – Gaari yar oo dhaqaalaha ku fiican</option>
+        <option value="smirked-van">SMIRKED Van – Gaari qoys ama xamuul</option>
+        <option value="smirked-suv">SMIRKED SUV – Gaari xoog badan oo buuraley ah</option>
+      </select>
+
+      <label for="postcode">Postcode / Degmada:</label>
+      <input type="text" id="postcode" name="postcode" required>
+
+      <label for="message">Fariin (Ikhtiyaari):</label>
+      <textarea id="message" name="message" rows="4" placeholder="Qoraal dheeraad ah..."></textarea>
+
+      <input type="submit" value="Dalbo Hadda">
+    </form>
+  </section>
+
+</body>
+</html>
